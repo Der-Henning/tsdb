@@ -3,9 +3,9 @@ COPY requirements.txt .
 
 RUN pip install --user -r requirements.txt
 
-WORKDIR /app
+RUN RUN python -m nltk.downloader vader_lexicon
 
-RUN python import nltk && python nltk.download('vader_lexicon')
+WORKDIR /app
 
 COPY ./src .
 
