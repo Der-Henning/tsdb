@@ -3,7 +3,7 @@ COPY requirements.txt .
 
 RUN pip install --user -r requirements.txt
 
-RUN RUN python -m nltk.downloader vader_lexicon
+RUN python -m nltk.downloader vader_lexicon
 
 WORKDIR /app
 
