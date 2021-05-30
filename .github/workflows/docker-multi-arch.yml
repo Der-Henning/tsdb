@@ -3,7 +3,7 @@ name: '[builder] CI for releases'
 on:
     push:
         branches:
-            - master
+            - main
             - dev
         tags:
             - v*
